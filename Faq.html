@@ -10,6 +10,7 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="CSS/reset.css">
 	<link rel="stylesheet" href="CSS/AmazCSS.css">
+	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
     </head>
 	<body>
 	    <header>
@@ -22,12 +23,23 @@
 	    </header>
 	    <main>
 		<div class='container'>
-			<h3>Ea sea accusam epicurei, ex admodum sapientem appellantur ius?</h3>
-			<p>Ei nostro impedit accusata vis.</p>
-			<h3>Mel cu dolorem honestatis, pri tantas nonumy diceret ne, in has ignota tibique vulputate?</h3>
-			<p>Nihil tacimates eum te, maiorum vituperatoribus id duo.</p>
-			<h3>Liber feugait vis no?</h3>
-			<p>Vel eu ornatus mnesarchum, quis fastidii recteque at nec. Ex alii pertinacia ius, te possit praesent mei. Wisi neglegentur intellegebat ea per, fugit aliquando signiferumque vix id. Usu dicant diceret ut, vel fastidii nominavi sensibus an, simul iuvaret principes vis ex.</p>
+				
+				<h3>Ea sea accusam epicurei, ex admodum sapientem appellantur ius?</h3>
+				<div id='Faq1'>Show/hide<br>
+					<p>Ei nostro impedit accusata vis.</p>
+				</div>
+				<br>
+				
+				<h3>Mel cu dolorem honestatis, pri tantas nonumy diceret ne, in has ignota tibique vulputate?</h3>
+				<div id='Faq2'>Show/hide<br>	
+					<p>Nihil tacimates eum te, maiorum vituperatoribus id duo.</p>
+				</div>
+				<br>
+				
+				<h3>Liber feugait vis no?</h3>
+				<div id='Faq3'>Show/hide<br>
+				    <p>Vel eu ornatus mnesarchum, quis fastidii recteque at nec. Ex alii pertinacia ius, te possit praesent mei. Wisi neglegentur intellegebat ea per, fugit aliquando signiferumque vix id. Usu dicant diceret ut, vel fastidii nominavi sensibus an, simul iuvaret principes vis ex.</p>
+				</div>
 		</div>
 	    </main>
 	    <footer>
@@ -55,5 +67,20 @@
 			</div>
 		</div>
 	    </footer>
+	    
+	    <script>
+		"use strict";
+			$("#Faq1").click(function(){
+				$("#Faq1").children("").toggle();
+			});
+			$("#Faq2").click(function(){
+				$("#Faq2").children().toggle();
+			});
+			$("#Faq3").click(function(){
+				$("#Faq3").children().toggle();
+			});
+	    </script>
 	</body>
 </html>
+
+
