@@ -1,117 +1,136 @@
 body {
-	background: #f9e933;
+  background: #f9e933;
+  font-family: 'Droid Sans', sans-serif;
 }
 
 header, main, footer {
-	min-width: 855px;
+  min-width: 855px;
 }
 
 header .container, main .container, footer .container {
-	max-width: 855px;
-	margin: auto;
+  max-width: 855px;
+  margin: auto;
 }
 
 header {
-	padding: 20px;
-	background: white;
-	overflow: auto;
-	border: 1px solid lightgrey;
+  padding: 25px 0 25px 0;
+  background: white;
+  overflow: auto;
+  border-bottom: 1px solid #ddd;
 }
 
-header h1 {
-	font-family: 'Ubuntu', sans-serif;
-	font-style: italic;
-	font-size: 3em; 
-	color: red;
-	float: left;
-	width: 570px;
+/* MAIN LOGO */
+h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: italic;
+  font-size: 3em;
+  color: #b33;
+  float: left;
+  width: 570px;
+}
+
+/* FOOTER HEADINGS */
+h5 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.25em;
+    margin-bottom: 20px;
 }
 
 header nav {
-	font-size: 1em;
-	float: right;
-	width: 285px;
-}
-
-main {
-	padding-top: 15px;
-	font-family: 'Droid Sans', sans-serif;
-	background: white;
-	overflow: hidden;
-	border: 1px solid lightgrey;
-	padding-bottom: 15px;
-}
-
-main .subleft {
-	width: 570px;
-	float: left;
-}
-
-main h2 h3 {
-	font-family: 'Ubuntu', sans-serif;
-}
-
-main h2 {
-	font-size: 2em;
-	padding-bottom: 5px;
-	padding-top: 10px;
-}
-
-main h3 {
-	padding-top: 15px;
-	padding-bottom: 5px;
-	font-size: 1.5em;
-}
-
-main .subright {
-	width: 285px;
-	float: right;
-}
-
-footer {
-	font-family: 'Droid Sans', sans-serif;
-	padding-top: 15px;
-	overflow: hidden;
-}
-
-footer .contact {
-	width: 570px;
-	float: left;
-}
-
-footer .contact h5 {
-	font-family: 'Droid Sans', sans-serif;
-	font-size: 1.15em;
-	padding-top: 15px;
-	padding-bottom: 10px;
-}
-
-footer .contact .ama {
-	font-family: 'Ubuntu', sans-serif;
-	font-style: italic;
-	color: red;
-}
-
-footer .sitemap {
-	width: 285px;
-	text-align: left;
-	float: right;
-}
-footer .sitemap h5 {
-	font-family: 'Droid Sans', sans-serif;
-	padding-top: 15px;
-}
-
-footer .sitemap ul li {
-	padding: 5px 0px 5px 0px;
+  float: right;
+  width: 285px;
 }
 
 a {
-	text-decoration: none;
-	color: red;
-	font-family: 'Droid Sans', sans-serif;
+  color: #f00;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-a:hover {
-	text-decoration: underline;
+main {
+    background: #fff;
+    border-radius: 0 5px 5px 5px;;
+    padding: 40px;
+}
+
+.tabs a span {
+    border-radius: 5px 5px 0 0;
+    display: inline-block;
+    width: 100px;
+    margin-right: 10px;
+    text-align: center;
+    background: #ddd;
+    padding: 5px;
+}
+
+.tabs a .active {
+    background: #eee;
+}
+
+main .content {
+    padding: 30px 10px 30px 10px;
+    border-radius: 0 5px 5px 5px;
+    background: #eee;
+}
+
+main .content li {
+    border-radius: 5px;
+    padding: 3px;
+    background: #eff;
+    margin: 0 0 10px 0;
+}
+
+main .content button {
+  font-weight: bold;
+  padding: 0 3px 0 3px;
+  border-radius: 5px;
+  background: #ccc;
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: 1.3em;
+}
+
+
+main .content p {
+    background: yellow;
+}
+
+main .content input {
+    font-size: 1.5em;
+}
+
+footer {
+    border-top: 1px solid #ddd;
+    padding: 40px 0 20px 0;
+}
+
+footer .contact {
+  float: left;
+  width: 570px;    
+}
+
+footer .contact p:nth-child(2) {
+  color: #b33;
+  font-style: italic;
+}
+
+footer .sitemap {
+    float: right;
+    width: 285px;
+}
+
+footer ul {
+    width: 230px;
+}
+
+li {
+    list-style: none;
+}
+
+footer .sitemap .left {
+    float: left;
+}
+
+footer .sitemap .right {
+    float: right;
 }
